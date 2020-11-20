@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  padding-left: 60%;
+  position: fixed;
+  z-index: 99999;
+  background-color: gray;
+}
+
+@media print,screen and (min-width:768px) {
+  .header {
+    height: 400px;
+    padding-bottom: 0;
+  }
+}
+
+.toc {
+  list-style: none;
+  display: flex;
+  z-index: 1;
+}
+
+@media print,screen and (min-width:768px) {
+  .toc {
+    height: 100px;
+    padding-bottom: 0;
+  }
+}
+
+body  {
+  background-image: url("../img/laptop-1205256_1920.jpg") ;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.button-wrapper {
+  display: inline-block;
+  margin: 5px ;
+  padding: 10px;
+}
+
+.button {
+  background: #fff;
+  border: none;
+  padding: 1px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: all .35s ease-in-out .35s;
+  margin: 4% auto;
+  width: 150px;
+  font-size: 1.-rem;
+  text-align: center;
+}
+
+.dark-button-2 {
+  background: rgb(99, 99, 99);
+}
+
+.dark-button-2 .button,
+.dark-button-2 .button span {
+  background: #333;
+  color: #fff;
+}
+.dark-button-2 .button:after,
+.dark-button-2 .button:before,
+.dark-button-2 .button:hover span {
+  background: #fff;
+  color: #444;
+} 
+.dark-button-1 {
+  background: rgb(99, 99, 99);
+}
+
+.dark-button-1 .button,
+.dark-button-1 .button span {
+  background: #333;
+  color: #fff;
+}
+.dark-button-1 .button:after,
+.dark-button-1 .button:before,
+.dark-button-1 .button:hover span {
+  background: #fff;
+  color: #444;
+} 
+
+span {
+  display: block;
+  padding: 15px 30px;
+  background: #fff;
+  z-index: 100;
+  position: relative;
+  transition: all .35s ease-in-out .35s;
+}
+
+.button:after {
+  bottom: -100%;
+  right: -100%;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all .35s ease-in-out .5s;
+}
+.button:hover:after {
+  right: 0;
+  bottom: 0;
+  transition: all ease-in-out .35s;
+}
+.button:before {
+  top: -100%;
+  left: -100%;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all .35s ease-in-out .5s;
+}
+.button:hover:before {
+  left: 0;
+  top: 0;
+  transition: all ease-in-out .35s;
+}
+
+.arrow1{
+  margin-left: 48%;
+  margin-top: 20%;
+  width: 30px;
+  height: 30px;
+}
+
+.box-img{
+  display: inline-block;
+  vertical-align: top;
+  margin: 10%;
+}
+
+.box-text{
+  padding-top: 10%;
+  padding-left: 2%;
+  display: inline-block;
+}
+
+.top-banner{
+  float: left;
+}
+.section {
+ padding-top:  10%;
+ padding-left: 15%;
+ display: flex;
+}
+
+.container {
+  text-align: center;
+  padding: 10%;
+  padding-top: 10%;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 30%;
+}
+
+.flex_test-box {
+  display: flex;              /* フレックスボックスにする */
+  padding-top: 10%;
+  padding: 10%;
+  padding-left: 15%;
+  background-color:#CCCCCC;
+}
+
+.flex {
+  padding-left: 47%;
+  padding-top: 5%;
+}
+
+.sample {
+  padding-left: 47%;
+  padding-top: 10%;
+  font-size: 2rem;
+  background-color: #CCCCCC;
+}
+
+.Performance{
+ text-align: center;
+ padding-top: 10%;
+ font-size: 2rem;
+}
+
+.conteiner1 {
+  padding-top: 10%;
+  display: flex;
+  padding-left: 10%;
+  padding-bottom: 17%;
+}
+
+.contact {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 10%;
+}
+
+.contact {
+  padding: 10%;
+  background-color: #cccccc;
+}
+
+.Form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+@media screen and (max-width: 480px) {
+  .Form {
+    margin-top: 40px;
+  }
+}
+.Form-Item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+}
+.Form-Item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: gray;
+  color: #fff;
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: gray;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+}
